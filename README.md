@@ -37,4 +37,4 @@ This is a React web application for a beauty salon called **GLOW Beauty Salon**.
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/glow-beauty-salon.git
+git clone [https://github.com/your-username/glow-beauty-salon.git](https://github.com/madablanita/glow-beauty-salon.git)

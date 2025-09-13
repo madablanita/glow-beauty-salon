@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.animate-fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 1.5s ease-in-out forwards;
+}
+.animate-fade-in.delay-1 {
+  animation-delay: 0.5s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.clients-reviews-title {
+  color: #f97316;
+  font-weight: 700; 
+  font-family: 'Poppins', sans-serif; 
+  text-align: center;
+  font-size: 1.25rem; 
+  margin-bottom: 2rem; 
+}
+
+.review-card {
+  background-color: #ffffff; 
+  padding: 1.5rem 2rem; 
+  border-radius: 0.5rem; 
+  box-shadow: 0 1px 3px rgb(0 0 0 / 0.1), 0 1px 2px rgb(0 0 0 / 0.06); 
+  width: 320px; 
+  min-height: 150px; 
+  transition: box-shadow 0.3s ease-in-out;
+  cursor: default;
+  text-align: left;
+  font-style: italic;
+  color: #333;
+  margin: 0; 
+}
+
+.review-card:hover {
+  box-shadow: 0 10px 15px rgb(0 0 0 / 0.2), 0 4px 6px rgb(0 0 0 / 0.1); 
+}
+
+
+.review-card p:first-child {
+  font-style: italic;
+  font-size: 16px;
+  line-height: 1.4;
+  margin: 0;
+}
+
+
+.review-card p:last-child {
+  margin-top: 1rem;
+  font-weight: 700; 
+  color: #ea580c; 
+  text-align: right;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+}
